@@ -94,8 +94,10 @@ public class Resources {
     public Response getBuddies(HashedMap input) throws TemplateModelException {
     	
 		String userId=  (String)input.get("userId");
-		String similarity = "0."+(String)input.get("similarity");
-		double threshhold = Double.parseDouble(similarity);
+		String similarity = (String)input.get("similarity");
+		if (userId.equals("") || similarity.equals(""))
+			return Response.status(400).build(); 
+		double threshhold = Double.parseDouble("0."+similarity);
 		long[] buddies=mahout.getAllBuddies(Integer.parseInt(userId),threshhold);
 		List<User> users = new ArrayList<User>();
 		try {
@@ -125,6 +127,7 @@ public class Resources {
 			template = cfg.getTemplate("buddies.ftl");
 			SimpleHash root = new SimpleHash();
 			root.put("users", users);
+			root.put("count", users.size());
 			root.put("userId", userId);
 			template.process(root, output);
 		} catch (Exception e) {
@@ -143,8 +146,10 @@ public class Resources {
     public Response getLocalBuddies(HashedMap input) throws TemplateModelException {
     	
 		String userId= (String)input.get("userId");
-		String similarity = "0."+(String)input.get("similarity");
-		double threshhold = Double.parseDouble(similarity);
+		String similarity = (String)input.get("similarity");
+		if (userId.equals("") || similarity.equals(""))
+			return Response.status(400).build(); 
+		double threshhold = Double.parseDouble("0."+similarity);
 		ArrayList<Long> buddies=mahout.getLocalBuddies(Integer.parseInt(userId),threshhold);
 		String qParams="";
 		List<User> users = new ArrayList<User>();
@@ -173,6 +178,7 @@ public class Resources {
 			template = cfg.getTemplate("buddies.ftl");
 			SimpleHash root = new SimpleHash();
 			root.put("users", users);
+			root.put("count", users.size());
 			root.put("userId", userId);
 			template.process(root, output);
 		} catch (Exception e) {
@@ -191,8 +197,10 @@ public class Resources {
     public Response getMovies(HashedMap input) throws TemplateModelException {
     	
 		String userId=  (String)input.get("userId");
-		String similarity = "0."+(String)input.get("similarity");
-		double threshhold = Double.parseDouble(similarity);
+		String similarity = (String)input.get("similarity");
+		if (userId.equals("") || similarity.equals(""))
+			return Response.status(400).build(); 
+		double threshhold = Double.parseDouble("0."+similarity);
 		HashMap<String, String> rawMovies = mahout.getMovieRecommendations(Integer.parseInt(userId),threshhold);
 //		System.out.println(movies);
 		String qParams="";

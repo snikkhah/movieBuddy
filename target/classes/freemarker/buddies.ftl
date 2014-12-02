@@ -1,5 +1,5 @@
 		
-			Similar users to user "${userId}" :
+			There are ${count} similar users to user "${userId}" :
 			<br><br>
 			<table class="table table-striped">
 				<tr>

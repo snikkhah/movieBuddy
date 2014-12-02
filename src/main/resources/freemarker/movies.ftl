@@ -1,4 +1,4 @@
-		Similar users to user "${userId}" :
+		Recommended movies to user "${userId}" :
 			<br><br>
 			<table class="table table-striped">
 				<tr>
