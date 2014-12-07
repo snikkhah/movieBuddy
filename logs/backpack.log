@@ -664,3 +664,992 @@ INFO  [2014-12-07 02:16:41,566] org.eclipse.jetty.server.Server: Graceful shutdo
 INFO  [2014-12-07 02:16:41,566] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
 INFO  [2014-12-07 02:16:43,621] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
 INFO  [2014-12-07 02:16:43,621] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:24:44,171] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 02:24:44,187] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 02:24:45,617] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 02:24:45,617] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 02:24:45,913] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 02:24:46,128] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 02:24:46,191] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 02:24:46,191] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 02:24:46,331] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 02:24:46,394] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 02:24:46,394] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 02:24:46,638] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:24:46,638] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:29:58,354] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:29:58,354] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:29:58,354] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:29:58,354] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:30:00,406] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:30:00,406] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:31:57,121] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 02:31:57,137] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 02:31:58,403] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 02:31:58,403] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 02:31:58,692] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 02:31:58,927] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 02:31:58,974] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 02:31:58,974] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 02:31:59,067] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 02:31:59,224] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 02:31:59,224] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 02:31:59,474] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:31:59,474] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:42:32,469] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:42:32,469] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:42:32,469] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:42:32,469] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:42:34,534] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:42:34,534] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:43:19,399] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 02:43:19,414] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 02:43:20,689] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 02:43:20,689] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 02:43:20,939] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 02:43:21,161] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 02:43:21,207] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 02:43:21,207] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 02:43:21,317] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 02:43:21,379] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 02:43:21,379] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 02:43:21,605] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:43:21,605] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:48:11,875] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:48:11,875] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:48:11,875] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:48:11,875] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:48:13,925] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:48:13,925] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:48:49,967] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 02:48:49,982] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 02:48:51,256] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 02:48:51,256] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 02:48:51,513] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 02:48:51,732] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 02:48:51,798] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 02:48:51,798] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 02:48:51,899] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 02:48:51,962] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 02:48:51,962] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 02:48:52,181] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:48:52,181] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:55:09,162] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:55:09,162] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:55:09,162] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:55:09,162] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:55:11,224] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:55:11,224] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:55:47,224] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 02:55:47,239] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 02:55:48,567] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 02:55:48,567] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 02:55:48,897] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 02:55:49,105] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 02:55:49,167] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 02:55:49,167] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 02:55:49,271] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 02:55:49,322] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 02:55:49,322] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 02:55:49,572] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:55:49,572] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:58:39,182] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 02:58:39,182] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:58:39,182] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:58:39,182] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:58:41,243] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:58:41,243] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 02:59:17,815] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 02:59:17,830] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 02:59:19,131] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 02:59:19,131] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 02:59:19,450] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 02:59:19,669] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 02:59:19,747] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 02:59:19,747] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 02:59:19,888] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 02:59:19,950] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 02:59:19,950] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 02:59:20,466] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 02:59:20,482] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:08:32,291] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:08:32,291] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:08:32,291] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:08:32,291] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:08:34,347] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:08:34,347] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:09:09,475] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:09:09,475] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:09:10,772] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:09:10,772] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:09:11,069] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:09:11,288] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:09:11,351] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:09:11,351] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:09:11,444] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:09:11,491] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:09:11,491] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:09:11,731] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:09:11,746] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:12:36,044] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:12:36,044] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:12:36,044] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:12:36,044] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:12:38,098] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:12:38,098] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:13:33,160] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:13:33,160] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:13:34,444] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:13:34,444] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:13:34,725] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:13:34,944] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:13:34,991] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:13:35,007] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:13:35,100] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:13:35,161] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:13:35,161] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:13:35,380] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:13:35,380] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:17:24,901] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:17:24,901] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:17:24,901] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:17:24,901] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:17:26,966] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:17:26,966] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:18:00,352] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:18:00,367] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:18:01,602] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:18:01,602] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:18:01,891] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:18:02,105] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:18:02,152] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:18:02,152] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:18:02,245] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:18:02,308] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:18:02,308] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:18:02,527] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:18:02,527] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:19:40,713] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:19:40,713] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:19:40,713] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:19:40,713] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:19:42,764] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:19:42,764] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:20:17,607] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:20:17,623] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:20:18,928] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:20:18,928] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:20:19,212] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:20:19,422] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:20:19,472] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:20:19,472] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:20:19,722] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:20:19,784] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:20:19,784] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:20:20,052] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:20:20,052] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:21:49,690] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:21:49,690] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:21:49,690] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:21:49,690] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:21:51,745] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:21:51,745] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:22:25,630] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:22:25,646] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:22:26,945] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:22:26,945] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:22:27,226] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:22:27,460] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:22:27,523] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:22:27,523] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:22:27,617] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:22:27,663] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:22:27,663] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:22:27,882] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:22:27,898] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:25:28,332] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:25:28,332] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:25:28,332] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:25:28,332] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:25:30,386] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:25:30,386] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:26:03,728] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:26:03,743] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:26:05,069] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:26:05,069] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:26:05,334] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:26:05,553] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:26:05,628] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:26:05,628] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:26:05,737] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:26:05,800] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:26:05,800] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:26:06,409] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:26:06,409] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:27:01,010] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:27:01,010] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:27:01,010] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:27:01,010] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:27:03,062] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:27:03,062] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:27:36,507] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:27:36,523] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:27:37,782] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:27:37,782] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:27:38,095] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:27:38,298] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:27:38,360] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:27:38,360] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:27:38,454] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:27:38,501] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:27:38,501] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:27:38,735] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:27:38,735] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:28:03,693] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:28:03,693] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:28:03,708] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:28:03,708] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:28:05,760] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:28:05,760] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:28:39,102] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:28:39,102] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:28:40,415] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:28:40,415] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:28:40,727] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:28:40,946] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:28:41,009] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:28:41,009] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:28:41,102] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:28:41,181] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:28:41,181] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:28:41,399] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:28:41,399] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:38:24,097] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:38:24,097] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:38:24,097] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:38:24,097] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:38:26,160] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:38:26,160] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:38:58,318] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:38:58,333] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:38:59,571] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:38:59,571] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:38:59,868] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:39:00,071] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:39:00,133] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:39:00,133] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:39:00,399] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:39:00,462] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:39:00,462] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:39:00,696] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:39:00,696] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:39:23,990] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 03:39:23,990] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:39:23,990] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:39:23,990] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:39:26,054] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:39:26,054] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 03:40:32,075] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 03:40:32,090] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 03:40:33,434] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 03:40:33,434] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 03:40:33,716] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 03:40:33,950] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 03:40:34,012] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 03:40:34,012] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 03:40:34,134] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 03:40:34,198] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/charts/chart1 (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 03:40:34,198] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 03:40:34,432] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 03:40:34,448] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:35:50,904] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:35:50,904] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:35:50,904] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:35:50,904] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:35:52,962] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:35:52,962] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:36:26,169] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 04:36:26,187] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 04:36:27,445] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 04:36:27,445] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 04:36:27,805] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 04:36:28,039] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 04:36:28,101] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 04:36:28,101] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 04:36:28,195] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 04:36:28,258] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 04:36:28,258] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 04:36:28,648] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:36:28,664] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:41:12,118] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:41:12,118] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:41:12,118] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:41:12,118] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:41:14,172] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:41:14,172] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:41:51,294] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 04:41:51,310] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 04:41:52,638] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 04:41:52,638] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 04:41:52,950] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 04:41:53,153] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 04:41:53,232] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 04:41:53,232] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 04:41:53,325] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 04:41:53,372] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 04:41:53,372] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 04:41:53,607] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:41:53,607] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:46:23,448] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:46:23,448] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:46:23,448] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:46:23,448] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:46:25,499] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:46:25,499] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:47:05,868] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 04:47:05,883] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 04:47:07,133] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 04:47:07,133] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 04:47:07,430] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 04:47:07,630] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 04:47:07,692] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 04:47:07,692] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 04:47:07,786] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 04:47:07,833] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 04:47:07,833] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 04:47:08,067] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:47:08,067] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:49:36,657] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:49:36,657] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:49:36,657] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:49:36,657] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:49:38,707] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:49:38,707] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:50:37,492] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 04:50:37,508] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 04:50:38,761] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 04:50:38,761] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 04:50:39,026] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 04:50:39,285] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 04:50:39,346] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 04:50:39,347] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 04:50:39,466] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 04:50:39,521] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 04:50:39,522] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 04:50:39,741] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:50:39,741] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:58:24,586] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:58:24,586] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:58:24,586] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:58:24,586] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:58:26,645] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:58:26,645] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:59:01,728] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 04:59:01,743] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 04:59:02,995] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 04:59:02,995] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 04:59:03,308] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 04:59:03,496] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 04:59:03,558] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 04:59:03,558] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 04:59:03,683] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 04:59:03,746] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 04:59:03,746] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 04:59:03,964] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:59:03,964] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:59:43,166] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 04:59:43,166] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 04:59:43,166] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:59:43,166] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:59:45,218] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 04:59:45,218] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:00:19,568] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 05:00:19,584] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 05:00:20,927] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 05:00:20,927] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 05:00:21,193] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 05:00:21,412] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 05:00:21,459] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 05:00:21,459] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 05:00:21,552] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 05:00:21,615] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 05:00:21,615] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 05:00:21,849] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 05:00:21,849] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 05:05:18,775] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 05:05:18,775] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 05:05:18,775] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:05:18,775] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:05:20,843] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:05:20,843] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:05:54,691] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 05:05:54,706] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 05:05:55,956] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 05:05:55,956] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 05:05:56,238] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 05:05:56,441] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 05:05:56,498] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 05:05:56,499] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 05:05:56,579] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 05:05:56,641] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 05:05:56,641] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 05:05:56,891] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 05:05:56,891] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 05:08:44,144] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 05:08:44,144] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 05:08:44,144] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:08:44,144] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:08:46,205] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:08:46,205] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:09:20,460] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 05:09:20,475] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 05:09:21,747] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 05:09:21,747] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 05:09:22,012] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 05:09:22,216] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 05:09:22,278] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 05:09:22,278] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 05:09:22,372] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 05:09:22,435] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 05:09:22,435] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 05:09:22,658] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 05:09:22,658] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 05:11:45,727] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 05:11:45,727] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 05:11:45,727] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:11:45,727] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:11:47,785] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:11:47,785] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:12:23,014] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Creating FileDataModel for file src\main\resources\ratings.csv
+INFO  [2014-12-07 05:12:23,029] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Reading file info...
+INFO  [2014-12-07 05:12:24,317] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Processed 1000000 lines
+INFO  [2014-12-07 05:12:24,317] org.apache.mahout.cf.taste.impl.model.file.FileDataModel: Read lines: 1000209
+INFO  [2014-12-07 05:12:24,618] org.apache.mahout.cf.taste.impl.model.GenericDataModel: Processed 6040 users
+WARN  [2014-12-07 05:12:24,837] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-12-07 05:12:24,884] com.yammer.dropwizard.cli.ServerCommand: Starting Backpack-service
+INFO  [2014-12-07 05:12:24,899] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2014-12-07 05:12:25,024] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-12-07 05:12:25,087] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /moviebuddy/v1/charts (movieBuddy.Resources)
+    GET     /moviebuddy/v1/home (movieBuddy.Resources)
+    GET     /moviebuddy/v1/landing (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/allbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/localbuddies (movieBuddy.Resources)
+    POST    /moviebuddy/v1/home/movies (movieBuddy.Resources)
+
+INFO  [2014-12-07 05:12:25,087] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-12-07 05:12:25,321] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 05:12:25,321] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 05:13:09,511] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2014-12-07 05:13:09,511] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8000
+INFO  [2014-12-07 05:13:09,511] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:13:09,511] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:13:11,564] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2014-12-07 05:13:11,564] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}

@@ -16,7 +16,7 @@
 			<p>This website is a tool for finding movie buddies based on users' movie ratings. This tool looks into 1 million ratings from 6000 users for 
 			about 4000 movies and uses the Pearson correlation similarity to find users with any desired similarity percentage.
 			</p>
-			<p><button class="btn btn-default">Statistical charts</button>
+			<a href="/moviebuddy/v1/charts"><button class="btn btn-default">Statistical charts</button></a>
 		</div>		
 		<div class="panel panel-warning">
 		<!-- Default panel contents -->
