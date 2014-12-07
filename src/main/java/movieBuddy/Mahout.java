@@ -27,6 +27,7 @@ public class Mahout {
 	
 	public Mahout(){
 		try{
+			System.out.println("Howdy from Mahout");
 			Extractor ext = new Extractor();
 			userCities = ext.usersCities(ext.zipcodeExtractor());
 			model = new FileDataModel(new File("src/main/resources/ratings.csv"));
@@ -40,6 +41,7 @@ public class Mahout {
 	
 	public long[] getAllBuddies(int targetId, double threshold){
 		try {
+			System.out.print(model);
 			neighborhood = new ThresholdUserNeighborhood(threshold, similarity, model);
 			return neighborhood.getUserNeighborhood(targetId);
 		} catch (Exception e) {
@@ -60,12 +62,12 @@ public class Mahout {
 		}
 		return closeBuddies;
 	}
-	public HashMap<String, String> getMovieRecommendations(int targetId, double threshold){
+	public HashMap<String, String> getMovieRecommendations(int targetId, double threshold, int No){
 		try{
 			neighborhood = new ThresholdUserNeighborhood(threshold, similarity, model);
 			HashMap<String, String> movies = new HashMap<String, String>();
 			UserBasedRecommender recommender = new GenericUserBasedRecommender(model, neighborhood, similarity);
-			List<RecommendedItem> recommendations = recommender.recommend(targetId, 3);
+			List<RecommendedItem> recommendations = recommender.recommend(targetId, No);
 			for (RecommendedItem recommendation : recommendations) {
 				movies.put(String.valueOf(recommendation.getItemID()), String.valueOf(recommendation.getValue()));
 //				System.out.println(recommendation);

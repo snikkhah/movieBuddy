@@ -71,12 +71,45 @@ public class Resources {
 	}
 	@GET
 	@Produces(MediaType.TEXT_HTML)
+	@Path("/landing")
+	@Timed(name = "home")
+	public Response landing() {	
+		Writer output = new StringWriter();
+		try {
+			template = cfg.getTemplate("landing.ftl");
+			SimpleHash root = new SimpleHash();
+			template.process(root, output);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+	 	return Response.status(200).entity(output.toString()).build();
+	}
+	@GET
+	@Produces(MediaType.TEXT_HTML)
 	@Path("/home")
 	@Timed(name = "home")
 	public Response home() {	
 		Writer output = new StringWriter();
 		try {
 			template = cfg.getTemplate("home.ftl");
+			SimpleHash root = new SimpleHash();
+			template.process(root, output);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+	 	return Response.status(200).entity(output.toString()).build();
+	}
+	
+	@GET
+	@Produces(MediaType.TEXT_HTML)
+	@Path("/charts")
+	@Timed(name = "home")
+	public Response charts() {	
+		Writer output = new StringWriter();
+		try {
+			template = cfg.getTemplate("charts.ftl");
 			SimpleHash root = new SimpleHash();
 			template.process(root, output);
 		} catch (Exception e) {
@@ -95,8 +128,10 @@ public class Resources {
     	
 		String userId=  (String)input.get("userId");
 		String similarity = (String)input.get("similarity");
-		if (userId.equals("") || similarity.equals(""))
-			return Response.status(400).build(); 
+		if (userId.equals("") )
+			return Response.status(400).entity("User ID is missing.").build();
+		if (similarity.equals(""))
+			return Response.status(400).entity("Similarity coefficient is missing.").build(); 
 		double threshhold = Double.parseDouble("0."+similarity);
 		long[] buddies=mahout.getAllBuddies(Integer.parseInt(userId),threshhold);
 		List<User> users = new ArrayList<User>();
@@ -147,8 +182,10 @@ public class Resources {
     	
 		String userId= (String)input.get("userId");
 		String similarity = (String)input.get("similarity");
-		if (userId.equals("") || similarity.equals(""))
-			return Response.status(400).build(); 
+		if (userId.equals("") )
+			return Response.status(400).entity("User ID is missing.").build();
+		if (similarity.equals(""))
+			return Response.status(400).entity("Similarity coefficient is missing.").build();
 		double threshhold = Double.parseDouble("0."+similarity);
 		ArrayList<Long> buddies=mahout.getLocalBuddies(Integer.parseInt(userId),threshhold);
 		String qParams="";
@@ -198,10 +235,15 @@ public class Resources {
     	
 		String userId=  (String)input.get("userId");
 		String similarity = (String)input.get("similarity");
-		if (userId.equals("") || similarity.equals(""))
-			return Response.status(400).build(); 
+		String movieNo = (String)input.get("movieNo");
+		if (userId.equals("") )
+			return Response.status(400).entity("User ID is missing.").build();
+		if (similarity.equals(""))
+			return Response.status(400).entity("Similarity coefficient is missing.").build();
+		if (movieNo.equals(""))	
+			return Response.status(400).entity("Movie Number is missing.").build();
 		double threshhold = Double.parseDouble("0."+similarity);
-		HashMap<String, String> rawMovies = mahout.getMovieRecommendations(Integer.parseInt(userId),threshhold);
+		HashMap<String, String> rawMovies = mahout.getMovieRecommendations(Integer.parseInt(userId),threshhold,Integer.parseInt(movieNo));
 //		System.out.println(movies);
 		String qParams="";
 		List<Movie> movies = new ArrayList<Movie>();

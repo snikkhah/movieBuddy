@@ -29,7 +29,11 @@
 						</div>
 						<div class="input-group input-group">
 							<span class="input-group-addon">Similarity Coefficient</span>
-							<input type="text" name="similarity" class="form-control" placeholder="Similarity 0 to 99">
+							<input type="text" name="similarity" class="form-control" placeholder="Please enter a similarity coefficient from 0 to 99">
+						</div>
+						<div class="input-group input-group">
+							<span class="input-group-addon">No. of Movies</span>
+							<input type="text" name="movieNo" class="form-control" placeholder="Please enter the number of movies you desire">
 						</div>
 						</form>
 						<div class="btn-group btn-group-justified" role="group" aria-label="...">
@@ -43,7 +47,7 @@
 						    <button type="submit" id="findMovies" class="btn btn-default" >Recommend movies</button>
 						  </div>
 						</div>
-						<h5 id ="errormsg" class="error"></h5>
+						<h5 id ="errormsg style="color:red" class="error"></h5>
 			</div>
 		</div>
 		
@@ -81,8 +85,8 @@
 			        type: 'POST',    
 			        contentType: 'application/json',
 			        data:JSON.stringify($('form').serializeObject()), 
-			        error:function(){
-			        $("#errormsg").empty().append("Wrong UserId");
+			        error:function(data){
+			        $("#errormsg").empty().append("Input missing or malformed. Please recheck your values and try again.");
 			  		},
 			        success: function(data) {
 			           $("#buddies").empty().append(data);
@@ -101,8 +105,8 @@
 			        type: 'POST',    
 			        contentType: 'application/json',
 			        data:JSON.stringify($('form').serializeObject()), 
-			        error:function(){
-			        $("#errormsg").empty().append("Wrong UserId");
+			        error:function(data){
+			        $("#errormsg").empty().append("Input missing or malformed. Please recheck your values and try again.");
 			  		},
 			        success: function(data) {
 			           $("#buddies").empty().append(data);
@@ -121,8 +125,8 @@
 			        type: 'POST',    
 			        contentType: 'application/json',
 			        data:JSON.stringify($('form').serializeObject()), 
-			        error:function(){
-			        $("#errormsg").empty().append("Wrong UserId");
+			        error:function(data){
+			        $("#errormsg").empty().append("Input missing or malformed. Please recheck your values and try again.");
 			  		},
 			        success: function(data) {
 			            $("#buddies").empty().append(data);
