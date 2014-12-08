@@ -16,7 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Movie Buddy!</title>
+    <title>Movie Buddies!</title>
     
   </head>
 
@@ -146,7 +146,7 @@ body {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Movie Buddy!</a>
+          <a class="navbar-brand" href="/moviebuddy/v1/home">Movie Buddy!</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           
@@ -162,6 +162,8 @@ body {
             <li><a id="chart4" >Users by occupation</a></li>
 			<li><a id="chart5" >Average rating of movies by occupation</a></li>
 			<li><a id="chart6" >Effect of age on rating of 5</a></li>
+			<li><a id="chart7" >Favorite genre for males</a></li>
+			<li><a id="chart8" >Favorite genre for females</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="container" style="width:80%; height:400px;"></div>
@@ -210,6 +212,19 @@ body {
 		    });
 		});
 		
+		$(function() {
+		    $('#chart7').click(function() {
+			chart7();	
+			toggle();  
+		    });
+		});
+		
+		$(function() {
+		    $('#chart8').click(function() {
+			chart8();	
+			toggle();  
+		    });
+		})
 
 	function chart1(){
 				$(function () { 
@@ -294,30 +309,6 @@ body {
 	}
 	function chart4(){
 		$(function () { 
-				    		$('#container').highcharts({
-				        chart: {
-				            type: 'line'
-				        },
-				        title: {
-				            text: 'Average rating of movies by genre'
-				        },
-				        xAxis: {
-				            categories: ['War', 'Film-Noir', 'Sci-Fi', 'Drama', 'Crime', 'Documentary', 'Horror', 'Musical', 'Western', 'Adventure', 'Mystery', 'Comedy', 'Thriller', 'Children', 'Action', 'Animation', 'Romance', 'Fantasy']
-				        },
-				        yAxis: {
-				            title: {
-				                text: 'Average Rating'
-				            }
-				        },
-				        series: [{
-				            name: 'ratings',
-				            data: [3.9, 4.3, 3.1, 3.8, 3.6, 4.0, 3.1, 3.8, 3.8, 3.7, 3.8, 3.5, 3.5, 2.9, 3.3, 4.4, 3.4, 4.0]
-				        }]
-				    });
-				});
-	}
-	function chart5(){
-		$(function () { 
 	    		$('#container').highcharts({
 	        chart: {
 	            type: 'bar'
@@ -349,7 +340,31 @@ body {
 	        }]
 	    });
 	});
-	
+	}
+	function chart5(){
+		$(function () { 
+	    		$('#container').highcharts({
+	        chart: {
+	            type: 'line'
+	        },
+	        title: {
+	            text: 'Average rating of movies by genre'
+	        },
+	        xAxis: {
+	            categories: ['War', 'Film-Noir', 'Sci-Fi', 'Drama', 'Crime', 'Documentary', 'Horror', 'Musical', 'Western', 'Adventure', 'Mystery', 'Comedy', 'Thriller', 'Children', 'Action', 'Animation', 'Romance', 'Fantasy']
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Average Rating'
+	            }
+	        },
+	        series: [{
+	            name: 'ratings',
+	            data: [3.9, 4.3, 3.1, 3.8, 3.6, 4.0, 3.1, 3.8, 3.8, 3.7, 3.8, 3.5, 3.5, 2.9, 3.3, 4.4, 3.4, 4.0]
+	        }]
+	    });
+	});
+
 	}
 	
 	function chart6(){
@@ -392,7 +407,31 @@ body {
 		    e.preventDefault();
 		});
 	}
+	
+	function chart7(){
+		  $.ajax({
+		        url: "/moviebuddy/v1/charts/worldcloud1",
+		        type: 'GET', 
+		        error:function(data){
+		       
+		  		},
+		        success: function(data) {
+		            $("#container").empty().append(data);
+			  	}
+		  	});
+	}
 
+	function chart8(){
+	 $.ajax({
+		        url: "/moviebuddy/v1/charts/worldcloud2",
+		        type: 'GET', 
+		        error:function(data){
+		  		},
+		        success: function(data) {
+		            $("#container").empty().append(data);
+			  	}
+		  	});
+	}
 			</script>
   </body>
 </html>

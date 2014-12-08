@@ -1,6 +1,9 @@
 package movieBuddy;
 
+import java.io.File;
+import java.io.IOException;
 import java.io.StringWriter;
+import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,6 +31,7 @@ import javax.ws.rs.core.Response.ResponseBuilder;
 import javax.ws.rs.core.UriBuilder;
 
 import org.apache.commons.collections.map.HashedMap;
+import org.apache.commons.io.FileUtils;
 
 import freemarker.template.Configuration;
 import freemarker.template.SimpleHash;
@@ -35,6 +39,7 @@ import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import freemarker.template.TemplateModelException;
 
+import com.sun.jersey.core.util.Base64;
 import com.yammer.metrics.annotation.Timed;
 
 import java.sql.Connection;
@@ -105,12 +110,62 @@ public class Resources {
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	@Path("/charts")
-	@Timed(name = "home")
+	@Timed(name = "charts")
 	public Response charts() {	
 		Writer output = new StringWriter();
 		try {
 			template = cfg.getTemplate("charts.ftl");
 			SimpleHash root = new SimpleHash();
+			template.process(root, output);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+	 	return Response.status(200).entity(output.toString()).build();
+	}
+	
+	@GET
+	@Produces(MediaType.TEXT_HTML)
+	@Path("/charts/worldcloud1")
+	@Timed(name = "worldcloud1")
+	public Response cloudChart1() {	
+		String pic = "";
+		try {
+			pic = new String(convertToBase64("src/main/resources/highmaleratings.PNG"), "UTF-8");
+		} catch (UnsupportedEncodingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		Writer output = new StringWriter();
+		try {
+			template = cfg.getTemplate("picture.ftl");
+			SimpleHash root = new SimpleHash();
+			root.put("pic", pic);
+			template.process(root, output);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+	 	return Response.status(200).entity(output.toString()).build();
+	}
+	
+	@GET
+	@Produces(MediaType.TEXT_HTML)
+	@Path("/charts/worldcloud2")
+	@Timed(name = "worldcloud2")
+	public Response cloudChart2() {	
+		String pic = "";
+		try {
+			pic = new String(convertToBase64("src/main/resources/highfemalerates.PNG"), "UTF-8");
+		} catch (UnsupportedEncodingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		Writer output = new StringWriter();
+		try {
+			template = cfg.getTemplate("picture.ftl");
+			SimpleHash root = new SimpleHash();
+			root.put("pic", pic);
 			template.process(root, output);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -294,6 +349,16 @@ public class Resources {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+	}
+	
+	private byte[] convertToBase64(String pic){
+		 try {
+			return Base64.encode(FileUtils.readFileToByteArray(new File (pic)));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
 		}
 	}
 

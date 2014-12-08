@@ -1,0 +1,1 @@
+<img alt="Embedded Image" src="data:image/png;base64,${pic}" style="display:block;margin-left:auto;margin-right:auto;" class="img-responsive img-rounded" alt="Responsive image">

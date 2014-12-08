@@ -18,7 +18,7 @@
 					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
 				  </p>
 					<h2 style="color:black;" align="middle"><b>MoveBuddies welcomes you to our webservice.</b></h2>
-					<h3 style="color:black;" align="middle">MoveBuddies is a movie recommender website that helps you to find your mate! Wait what?!</h3>
+					<h3 style="color:black;" align="middle">MoveBuddies is here to help you find your movie buddies and get movie recommendations!</h3>
 					<img src="http://static.boredpanda.com/blog/wp-content/uuuploads/movie-poster-cliches/movie-poster-cliches-8.jpg" style="display:block;margin-left:auto;margin-right:auto;" class="img-responsive img-rounded" alt="Responsive image">
 					</br>
 					<!-- http://i.imgur.com/V6zRV.jpg | http://www.yfs.ymca.org/lib-local/assets/Special%20Events/movie.png-->
