@@ -162,8 +162,10 @@ body {
             <li><a id="chart4" >Users by occupation</a></li>
 			<li><a id="chart5" >Average rating of movies by occupation</a></li>
 			<li><a id="chart6" >Effect of age on rating of 5</a></li>
-			<li><a id="chart7" >Favorite genre for males</a></li>
-			<li><a id="chart8" >Favorite genre for females</a></li>
+			<li><a id="chart7" >Average Rating By Genre - Males</a></li>
+			<li><a id="chart8" >Average Rating By Genre - Females</a></li>
+			<li><a id="chart9" >Favorite genre for males</a></li>
+			<li><a id="chart10" >Favorite genre for females</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="container" style="width:80%; height:400px;"></div>
@@ -222,6 +224,20 @@ body {
 		$(function() {
 		    $('#chart8').click(function() {
 			chart8();	
+			toggle();  
+		    });
+		});
+		
+		$(function() {
+		    $('#chart9').click(function() {
+			chart9();	
+			toggle();  
+		    });
+		});
+		
+		$(function() {
+		    $('#chart10').click(function() {
+			chart10();	
 			toggle();  
 		    });
 		})
@@ -397,18 +413,58 @@ body {
 	    });
 	});
 	}
-	function toggle(){
-	$('.sidebar li').click(function(e) {
-		    $('.sidebar li.active').removeClass('active');
-		    var $this = $(this);
-		    if (!$this.hasClass('active')) {
-		        $this.addClass('active');
-		    }
-		    e.preventDefault();
-		});
-	}
 	
 	function chart7(){
+			$(function () { 
+	    		$('#container').highcharts({
+	        chart: {
+	            type: 'area'
+	        },
+	        title: {
+	            text: 'Average rating by genre (Male)'
+	        },
+	        xAxis: {
+	            categories: ['Drama', 'Comedy', 'Fantasy', 'Horror', 'Thriller', 'Film-Noir', 'Crime', 'Western', 'War', 'Musical', 'Adventure', 'Sci-Fi', 'Childrens', 'Action', 'Documentary', 'Romance', 'Animation', 'Mystery']
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Average Rating'
+	            }
+	        },
+	        series: [{
+	            name: 'ratings',
+	            data: [3.8, 3.5, 3.4, 3.2, 3.6, 4.1, 3.7, 3.7, 3.9, 3.6, 3.5, 3.5, 3.4, 3.5, 3.9, 3.6, 3.7, 3.7]
+	        }]
+	    });
+	});
+	}
+	
+	function chart8(){
+			$(function () { 
+	    		$('#container').highcharts({
+	        chart: {
+	            type: 'area'
+	        },
+	        title: {
+	            text: 'Average rating by genre (Female)'
+	        },
+	        xAxis: {
+	            categories: ['Drama', 'Comedy', 'Fantasy', 'Horror', 'Thriller', 'Film-Noir', 'Crime', 'Western', 'War', 'Musical', 'Adventure', 'Sci-Fi', 'Childrens', 'Action', 'Documentary', 'Romance', 'Animation', 'Mystery']
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Average Rating'
+	            }
+	        },
+	        series: [{
+	            name: 'ratings',
+	            data: [3.7, 3.6, 3.5, 3.2, 3.6, 4.1, 3.7, 3.6, 3.8, 3.9, 3.5, 3.4, 3.6, 3.5, 3.9, 3.7, 3.7, 3.7]
+	        }]
+	    });
+	});
+	}
+	
+	function chart9(){
 		  $.ajax({
 		        url: "/moviebuddy/v1/charts/worldcloud1",
 		        type: 'GET', 
@@ -421,7 +477,7 @@ body {
 		  	});
 	}
 
-	function chart8(){
+	function chart10(){
 	 $.ajax({
 		        url: "/moviebuddy/v1/charts/worldcloud2",
 		        type: 'GET', 
@@ -432,6 +488,18 @@ body {
 			  	}
 		  	});
 	}
+	
+	function toggle(){
+	$('.sidebar li').click(function(e) {
+		    $('.sidebar li.active').removeClass('active');
+		    var $this = $(this);
+		    if (!$this.hasClass('active')) {
+		        $this.addClass('active');
+		    }
+		    e.preventDefault();
+		});
+	}
+	
 			</script>
   </body>
 </html>
