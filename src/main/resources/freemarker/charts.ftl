@@ -358,16 +358,16 @@ body {
 	});
 	}
 	function chart5(){
-		$(function () { 
+				$(function () { 
 	    		$('#container').highcharts({
 	        chart: {
 	            type: 'line'
 	        },
 	        title: {
-	            text: 'Average rating of movies by genre'
+	            text: 'Average rating of movies by occupation'
 	        },
 	        xAxis: {
-	            categories: ['War', 'Film-Noir', 'Sci-Fi', 'Drama', 'Crime', 'Documentary', 'Horror', 'Musical', 'Western', 'Adventure', 'Mystery', 'Comedy', 'Thriller', 'Children', 'Action', 'Animation', 'Romance', 'Fantasy']
+	            categories: ['technician/engineer', 'other', 'student', 'scientist', 'farmer', 'doctor/health care', 'executive/managerial', 'writer', 'lawyer', 'programmer', 'tradesman/craftsman', 'artist', 'retired', 'customer service', 'unemployed', 'self-employed', 'college/grad student', 'academic/educator', 'clerical/admin', 'sales/marketing', 'homemaker']
 	        },
 	        yAxis: {
 	            title: {
@@ -376,7 +376,7 @@ body {
 	        },
 	        series: [{
 	            name: 'ratings',
-	            data: [3.9, 4.3, 3.1, 3.8, 3.6, 4.0, 3.1, 3.8, 3.8, 3.7, 3.8, 3.5, 3.5, 2.9, 3.3, 4.4, 3.4, 4.0]
+	            data: [3.61, 3.53, 3.53, 3.7, 3.5, 3.7, 3.6, 3.5, 3.6, 3.6, 3.5, 3.6, 3.8, 3.5, 3.4, 3.6, 3.5, 3.6, 3.6, 3.6, 3.6]
 	        }]
 	    });
 	});

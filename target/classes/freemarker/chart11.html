@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  	<title>First Chart</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+	<script> 
+		$(function () { 
+    		$('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Number of movie ratings by occupation'
+        },
+        xAxis: {
+            categories: ['technician/engineer', 'other', 'student', 'scientist', 'farmer', 'doctor/health care', 'executive/managerial', 'writer', 'lawyer', 'programmer', 'tradesman/craftsman', 'artist', 'retired', 'customer service', 'unemployed', 'self-employed', 'college/grad student', 'academic/educator', 'clerical/admin', 'sales/marketing', 'homemaker']
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Rating'
+            }
+        },
+        series: [{
+            name: 'ratings',
+            data: [72816, 130499, 23290, 22951, 2706, 37205, 105425, 60397, 20563, 57214, 12086, 50068, 13754, 21850, 14904, 46021, 131032, 85351, 31623, 49109, 11345]
+        }]
+    });
+});
+
+	</script>
+</head>
+
+<body>
+
+<div id="container" style="width:100%; height:400px;"></div>
+
+
+</body>
+
+</html>

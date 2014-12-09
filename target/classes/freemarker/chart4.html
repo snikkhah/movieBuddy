@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  	<title>First Chart</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+	<script> 
+		$(function () { 
+    		$('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Users by occupation'
+        },
+        xAxis: {
+            categories: ['technician/engineer', 'other', 'student', 'scientist', 'farmer', 'doctor/health care', 'executive/managerial', 'writer', 'lawyer', 'programmer', 'tradesman/craftsman', 'artist', 'retired', 'customer service', 'unemployed', 'self-employed', 'college/grad student', 'academic/educator', 'clerical/admin', 'sales/marketing', 'homemaker']
+        },
+        yAxis: {
+            title: {
+                text: 'number of users'
+            }
+        },
+        plotOptions: {
+            column: {
+                grouping: true,
+                shadow: false
+            }
+        },
+        series: [{
+            name: 'F',
+            data: [7649, 32945, 6983, 4198, 636, 14979, 17967, 15691, 2643, 6804, 414, 16050, 2799, 3905, 3473, 7439, 32464, 32533, 14325, 11989, 10554]
+        },
+        {
+            name: 'M',
+            data: [65167, 97554, 16307, 18753, 2070, 22226, 87458, 44706, 17920, 50410, 11672, 34018, 10955, 17945, 11431, 38582, 98568, 52818, 17298, 37120, 791]
+        }]
+    });
+});
+
+	</script>
+</head>
+
+<body>
+
+<div id="container" style="width:100%; height:400px;"></div>
+
+
+</body>
+
+</html>
